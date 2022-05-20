@@ -33,24 +33,50 @@ class _LoginScreenState extends State<LoginScreen> {
                           fontSize: 30),
                     )),
                 Container(
-                  padding: const EdgeInsets.all(10),
-                  child: TextField(
-                    controller: loginEmail,
+                  margin: const EdgeInsets.symmetric(
+                    vertical: 18,
+                    horizontal: 15,
+                  ),
+                  child: TextFormField(
                     decoration: const InputDecoration(
-                      border: OutlineInputBorder(),
                       labelText: 'Email',
+                      labelStyle: TextStyle(fontSize: 18),
+                      errorStyle: TextStyle(color: Colors.red, fontSize: 15),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                      ),
                     ),
+                    controller: loginEmail,
+                    validator: (loginEmail) {
+                      if (loginEmail == null || loginEmail.isEmpty) {
+                        return 'Please enter email';
+                      }
+                      return null;
+                    },
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                  child: TextField(
-                    obscureText: true,
-                    controller: loginPassword,
+                  margin: const EdgeInsets.symmetric(
+                    vertical: 18,
+                    horizontal: 15,
+                  ),
+                  child: TextFormField(
                     decoration: const InputDecoration(
-                      border: OutlineInputBorder(),
                       labelText: 'Password',
+                      labelStyle: TextStyle(fontSize: 18),
+                      errorStyle: TextStyle(color: Colors.red, fontSize: 15),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                      ),
                     ),
+                    controller: loginPassword,
+                    obscureText: true,
+                    validator: (loginPassword) {
+                      if (loginPassword == null || loginPassword.isEmpty) {
+                        return 'Please enter Password';
+                      }
+                      return null;
+                    },
                   ),
                 ),
                 Container(

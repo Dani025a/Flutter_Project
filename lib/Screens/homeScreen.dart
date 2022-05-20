@@ -103,34 +103,35 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           TableCell(
                             child: Row(
-                              children: [
-                                IconButton(
-                                  onPressed: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => EditScreen(
-                                            docID: firebaseData[i]['id']),
-                                      ),
-                                    );
-                                  },
-                                  icon: const Icon(
-                                    Icons.edit,
-                                    color: Colors.orange,
+                                children: [
+                                  IconButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => EditScreen(
+                                              docID: firebaseData[i]['id']),
+                                        ),
+                                      );
+                                    },
+                                    icon: const Icon(
+                                      Icons.edit,
+                                      color: Colors.orange,
+                                    ),
                                   ),
-                                ),
-                                IconButton(
-                                  onPressed: () {
-                                    _delete(firebaseData[i]['id']);
-                                    //print(firebaseData);
-                                  },
-                                  icon: const Icon(
-                                    Icons.delete,
-                                    color: Colors.red,
+                                  IconButton(
+                                    onPressed: () {
+                                      _delete(firebaseData[i]['id']);
+                                      //print(firebaseData);
+                                    },
+                                    icon: const Icon(
+                                      Icons.delete,
+                                      color: Colors.red,
+                                    ),
                                   ),
-                                ),
-                              ],
-                            ),
+                                ],
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.center),
                           ),
                         ],
                       ),

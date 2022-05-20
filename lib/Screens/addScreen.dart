@@ -129,6 +129,9 @@ class _AddScreenState extends State<AddScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    minimumSize: const Size(380, 50),
+                  ),
                   onPressed: () {
                     addUser(
                         name: name.text,

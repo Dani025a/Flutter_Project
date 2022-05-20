@@ -33,24 +33,50 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           fontSize: 30),
                     )),
                 Container(
-                  padding: const EdgeInsets.all(10),
-                  child: TextField(
-                    controller: signUpEmail,
+                  margin: const EdgeInsets.symmetric(
+                    vertical: 18,
+                    horizontal: 15,
+                  ),
+                  child: TextFormField(
                     decoration: const InputDecoration(
-                      border: OutlineInputBorder(),
                       labelText: 'Email',
+                      labelStyle: TextStyle(fontSize: 18),
+                      errorStyle: TextStyle(color: Colors.red, fontSize: 15),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                      ),
                     ),
+                    controller: signUpEmail,
+                    validator: (signUpEmail) {
+                      if (signUpEmail == null || signUpEmail.isEmpty) {
+                        return 'Please enter email';
+                      }
+                      return null;
+                    },
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                  child: TextField(
-                    obscureText: true,
-                    controller: signUpPassword,
+                  margin: const EdgeInsets.symmetric(
+                    vertical: 18,
+                    horizontal: 15,
+                  ),
+                  child: TextFormField(
                     decoration: const InputDecoration(
-                      border: OutlineInputBorder(),
                       labelText: 'Password',
+                      labelStyle: TextStyle(fontSize: 18),
+                      errorStyle: TextStyle(color: Colors.red, fontSize: 15),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                      ),
                     ),
+                    controller: signUpPassword,
+                    obscureText: true,
+                    validator: (signUpPassword) {
+                      if (signUpPassword == null || signUpPassword.isEmpty) {
+                        return 'Please enter Password';
+                      }
+                      return null;
+                    },
                   ),
                 ),
                 Container(

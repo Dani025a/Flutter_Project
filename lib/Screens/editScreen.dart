@@ -177,6 +177,9 @@ class _EditScreenState extends State<EditScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          minimumSize: const Size(380, 50),
+                        ),
                         onPressed: () {
                           if (_formkey.currentState!.validate()) {
                             setState(() {
