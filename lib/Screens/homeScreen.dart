@@ -2,7 +2,6 @@ import 'dart:ffi';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firstapp/Screens/addScreen.dart';
 import 'package:firstapp/Screens/editScreen.dart';
-import 'package:firstapp/database.dart';
 import 'package:flutter/material.dart';
 import 'loginScreen.dart';
 
