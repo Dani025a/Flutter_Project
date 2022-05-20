@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "234676042313",
+    "project_id": "fluttervsreact-46182",
+    "storage_bucket": "fluttervsreact-46182.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234676042313:android:5e98a4b593da006b831d98",
+        "android_client_info": {
+          "package_name": "com.example.firstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234676042313-q622id0f7qb5jqccmevsk0necscgl44j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBERSGZtrZHJvsMpT86g6wrBK99n68qhSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234676042313-q622id0f7qb5jqccmevsk0necscgl44j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "234676042313-ejcdukr0tquh1628jn1gl7b263tal4dn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firstapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
