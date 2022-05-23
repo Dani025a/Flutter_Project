@@ -1,16 +1,9 @@
 # firstapp
 
-A new Flutter project.
 
-## Getting Started
+Dette er min Flutter app
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+I appen bruger jeg Firebase Authentication og firestore.
+Det er muligt at registere og logge ind på appen, samt kan man tilføje en user med navn, email, nummer og addresse.
+Nå man har tilføjet en ny user kan man se den i en liste.
+Det er også muligt at slette og redigere listen.
