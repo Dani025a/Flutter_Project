@@ -19,6 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     CollectionReference delUser =
         FirebaseFirestore.instance.collection('users');
+        
     Future<void> _delete(id) {
       return delUser
           .doc(id)

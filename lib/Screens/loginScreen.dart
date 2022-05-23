@@ -19,7 +19,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return MaterialApp(
         title: _title,
         home: Scaffold(
-            appBar: AppBar(title: const Text(_title)),
+            appBar: AppBar(title: const Text(_title)),  
             body: ListView(
               children: <Widget>[
                 Container(
